@@ -22,20 +22,22 @@
     <title><data:view.title.escaped/></title>
     <b:include data='blog' name='all-head-content'/>
 
-<!-- Custom Favicon from Neocities -->
-<link href='https://mordictionary.neocities.org/Images/Favicons/16%20Rounded%20MorDictionary%20Favicon.png' rel='icon' sizes='16x16' type='image/png'/>
-<link href='https://mordictionary.neocities.org/Images/Favicons/32%20Rounded%20MorDictionary%20Favicon.png' rel='icon' sizes='32x32' type='image/png'/>
-<link href='https://mordictionary.neocities.org/Images/Favicons/48%20Rounded%20MorDictionary%20Favicon.png' rel='icon' sizes='48x48' type='image/png'/>
-<link href='https://mordictionary.neocities.org/Images/Favicons/57%20Rounded%20MorDictionary%20Favicon.png' rel='apple-touch-icon' sizes='57x57'/>
-<link href='https://mordictionary.neocities.org/Images/Favicons/60%20Rounded%20MorDictionary%20Favicon.png' rel='apple-touch-icon' sizes='60x60'/>
-<link href='https://mordictionary.neocities.org/Images/Favicons/72%20Rounded%20MorDictionary%20Favicon.png' rel='apple-touch-icon' sizes='72x72'/>
-<link href='https://mordictionary.neocities.org/Images/Favicons/76%20Rounded%20MorDictionary%20Favicon.png' rel='apple-touch-icon' sizes='76x76'/>
-<link href='https://mordictionary.neocities.org/Images/Favicons/114%20Rounded%20MorDictionary%20Favicon.png' rel='apple-touch-icon' sizes='114x114'/>
-<link href='https://mordictionary.neocities.org/Images/Favicons/120%20Rounded%20MorDictionary%20Favicon.png' rel='apple-touch-icon' sizes='120x120'/>
-<link href='https://mordictionary.neocities.org/Images/Favicons/144%20Rounded%20MorDictionary%20Favicon.png' rel='apple-touch-icon' sizes='144x144'/>
-<link href='https://mordictionary.neocities.org/Images/Favicons/152%20Rounded%20MorDictionary%20Favicon.png' rel='apple-touch-icon' sizes='152x152'/>
-<link href='https://mordictionary.neocities.org/Images/Favicons/192%20MorDictionary%20Favicon.png' rel='icon' sizes='192x192' type='image/png'/>
-<link href='https://mordictionary.neocities.org/Images/Favicons/256%20MorDictionary%20Favicon.png' rel='icon' sizes='256x256' type='image/png'/>
+<!-- Custom Favicons -->
+<link href='https://yourdomain.example.com/path/to/favicon-16.png' rel='icon' sizes='16x16' type='image/png'/>
+<link href='https://yourdomain.example.com/path/to/favicon-32.png' rel='icon' sizes='32x32' type='image/png'/>
+<link href='https://yourdomain.example.com/path/to/favicon-48.png' rel='icon' sizes='48x48' type='image/png'/>
+
+<link href='https://yourdomain.example.com/path/to/apple-icon-57.png' rel='apple-touch-icon' sizes='57x57'/>
+<link href='https://yourdomain.example.com/path/to/apple-icon-60.png' rel='apple-touch-icon' sizes='60x60'/>
+<link href='https://yourdomain.example.com/path/to/apple-icon-72.png' rel='apple-touch-icon' sizes='72x72'/>
+<link href='https://yourdomain.example.com/path/to/apple-icon-76.png' rel='apple-touch-icon' sizes='76x76'/>
+<link href='https://yourdomain.example.com/path/to/apple-icon-114.png' rel='apple-touch-icon' sizes='114x114'/>
+<link href='https://yourdomain.example.com/path/to/apple-icon-120.png' rel='apple-touch-icon' sizes='120x120'/>
+<link href='https://yourdomain.example.com/path/to/apple-icon-144.png' rel='apple-touch-icon' sizes='144x144'/>
+<link href='https://yourdomain.example.com/path/to/apple-icon-152.png' rel='apple-touch-icon' sizes='152x152'/>
+
+<link href='https://yourdomain.example.com/path/to/favicon-192.png' rel='icon' sizes='192x192' type='image/png'/>
+<link href='https://yourdomain.example.com/path/to/favicon-256.png' rel='icon' sizes='256x256' type='image/png'/>
 
     <meta content='#ffffff' name='msapplication-TileColor'/>
   <meta content='MorEnglish' property='og:title'/>
@@ -100,18 +102,17 @@ body {
   font-family: var(--font-primary);
   margin: 0;
   padding: 0;
-  background-color: #050505; /* slightly purer black base */
+  background-color: #050505;
   position: relative;
   color: var(--color-text-main);
   line-height: 1.6em;
 
-  /* Only radial gradients here */
   background-image: 
     radial-gradient(circle at 15% 20%, rgba(90, 141, 207, 0.15), transparent 45%),
     radial-gradient(circle at 80% 70%, rgba(90, 141, 207, 0.1), transparent 55%);
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
-  background-attachment: fixed, fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 body::before {
   content: '';
@@ -121,10 +122,11 @@ body::before {
   width: 100%;
   height: 100%;
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* darkening layer */
-    url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3SRei7U_rHpEJZNK5yL1uXoENe_pi1bXR61sET2-KgTWMhHzx7IIrOl9_vDNzGIaQN88NYBsxxFf1PSX3Tq5MNtKpd3ylMtr3XxWL_5yTZLR15mDBLSFr7DAa-RxYEFX2eR4-cTfSut1tQoB0X4CcqOG07Pl3lsFTFlr-TVr3WpxWMTEQTvMB3qIHVIuJ/s16000/background%20morenglish.png');
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBw5A3IlW9iZAn2fwXuAwov0KmLMrTiFPAB7aS4LhGB3gdUy0yKv3vZvmp4p4But54D20UWWNRJVzvaFi8z8zCSCbFrL9h1et9HO9KSccir9mB9ZTwmgm5Pd23Cooj8DFrl91XJKqs3aJszvIWu2NTdFV2z0Mt0Dfbhyphenhyphen6b_ZCGJllU4YJWRChG9Q6MkEpe/s16000/morenglish%20background%20image%20(2).png');
   background-repeat: no-repeat, repeat;
   background-size: cover, 256px;
+  background-position: center center;
   z-index: -1;
   pointer-events: none;
 }
@@ -486,7 +488,7 @@ span:not(.material-icons):not(.material-symbols-rounded) {
   border-radius: 8px;
   border-width: 20px;
   border-style: solid;
-  border-image-source: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDWP48uGXTj6yrS_yaHzR6QAATyadMXqR8HXK38Iu2U8CRLeiLqqoanbbKXPhv5dIsOGEQKmnKJFAwGSbWWSXsnJuaa2VnppmYlVKYJN9bDzWXl9AvZZTgmx_9Jm1fR6gLRk_zFVm9Q2j8Kt6mxvSgnD2aQMF4kyueA6y3zooiyTzki6fTG0J3Fs4aki_J/s2560/White1%C2%A0%20-%20Imgur.png');
+  border-image-source: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2ExMfgl3MnXfpoIU6uoQYLp6ec_bAUH8wENtkzwzj9U9QN7sjQsk23peh-EjF2vmqbgwuVnzVicPi0e20TFpmM6KMBYLAB14R58HSgjBXmmMdWh6sHm-RfWeUMY1Gq3Az2tPNXoNXriSYNfHS-OIJHWKNRrZooeXNaqzlMVmW98ECBPinp6_DYGFk1fap/s16000/Border%20Dark%20Attempt.png');
   border-image-slice: 40%;
   border-image-repeat: stretch;
   box-sizing: border-box;
@@ -557,7 +559,7 @@ span:not(.material-icons):not(.material-symbols-rounded) {
   position: sticky;
   top: 40px;
   padding: var(--padding-general);
-  background: linear-gradient(135deg, #1c0101, #2a0004); /* deeper blood-red tones */
+  background: linear-gradient(135deg, #1c0101, #2a0004);
   border-radius: 8px;
   color: var(--color-text-main);
   height: fit-content;
@@ -567,37 +569,61 @@ span:not(.material-icons):not(.material-symbols-rounded) {
   margin-right: var(--padding-general);
   border-width: 20px;
   border-style: solid;
-  border-image-source: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDWP48uGXTj6yrS_yaHzR6QAATyadMXqR8HXK38Iu2U8CRLeiLqqoanbbKXPhv5dIsOGEQKmnKJFAwGSbWWSXsnJuaa2VnppmYlVKYJN9bDzWXl9AvZZTgmx_9Jm1fR6gLRk_zFVm9Q2j8Kt6mxvSgnD2aQMF4kyueA6y3zooiyTzki6fTG0J3Fs4aki_J/s2560/White1%C2%A0%20-%20Imgur.png');
+  border-image-source: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2ExMfgl3MnXfpoIU6uoQYLp6ec_bAUH8wENtkzwzj9U9QN7sjQsk23peh-EjF2vmqbgwuVnzVicPi0e20TFpmM6KMBYLAB14R58HSgjBXmmMdWh6sHm-RfWeUMY1Gq3Az2tPNXoNXriSYNfHS-OIJHWKNRrZooeXNaqzlMVmW98ECBPinp6_DYGFk1fap/s16000/Border%20Dark%20Attempt.png');
   border-image-slice: 40%;
   border-image-repeat: stretch;
-  box-shadow: 0 0 10px rgba(204, 17, 34, 0.15); /* red glow */
+  box-shadow: 0 0 10px rgba(204, 17, 34, 0.15);
   transition: box-shadow 0.3s ease;
 }
 .sidebar:hover {
-  box-shadow: 0 0 18px rgba(204, 17, 34, 0.4); /* white-hot red */
+  box-shadow: 0 0 18px rgba(204, 17, 34, 0.4);
 }
+/* Centered, icon-aligned sidebar headings */
 .sidebar h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   font-size: 26px;
   font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 15px;
-  text-align: center;
+  margin: 0 0 15px;
   color: var(--color-white);
+  text-align: center;
   text-shadow: 0 0 6px rgba(255, 255, 255, 0.2), 0 0 8px rgba(204, 17, 34, 0.25);
   transition: font-size 0.3s ease, text-shadow 0.3s ease;
 }
-.sidebar a {
-  font-size: 17px;
-  color: var(--color-red);
+.sidebar h2 a {
+  color: inherit;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s, text-shadow 0.3s, font-size 0.3s ease;
+  display: inline-flex;
+  align-items: center;
 }
-.sidebar a:hover {
-  color: var(--color-white);
-  text-shadow: 0 0 6px var(--color-red), 0 0 12px rgba(255, 255, 255, 0.3);
-  font-size: 18px;
+/* Proper icons for widget headers */
+#BlogArchive1 h2::before {
+  content: 'archive';
+  font-family: 'Material Icons';
+  margin-right: 6px;
+  color: var(--color-red);
+  text-shadow: 0 0 5px rgba(204, 17, 34, 0.5), 0 0 8px rgba(255, 255, 255, 0.1);
 }
+#Translate1 h2::before {
+  content: 'translate';
+  font-family: 'Material Icons';
+  margin-right: 6px;
+  color: var(--color-red);
+  text-shadow: 0 0 5px rgba(204, 17, 34, 0.5), 0 0 8px rgba(255, 255, 255, 0.1);
+}
+#Label1 {
+  margin-top: 20px; /* or 24px, tweak as needed */
+}
+#Label1 h2 a::before {
+  content: 'label';
+  font-family: 'Material Icons';
+  margin-right: 6px;
+  color: var(--color-red);
+  text-shadow: 0 0 5px rgba(204, 17, 34, 0.5), 0 0 8px rgba(255, 255, 255, 0.1);
+}
+/* Archive buttons */
 .sidebar ul.flat {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -607,7 +633,7 @@ span:not(.material-icons):not(.material-symbols-rounded) {
   list-style: none;
 }
 .sidebar ul.flat li.archivedate {
-  background: linear-gradient(135deg, #2c0000, #100000); /* deeper red */
+  background: linear-gradient(135deg, #2c0000, #100000);
   border: 1px solid var(--color-red);
   border-radius: 4px;
   text-align: center;
@@ -626,26 +652,11 @@ span:not(.material-icons):not(.material-symbols-rounded) {
   font-weight: bold;
   display: block;
 }
-/* Icon headers */
-#BlogArchive1 h2:before,
-#Label1 h2:before,
-#Translate1 h2:before {
-  font-family: 'Material Icons';
-  margin-right: 8px;
-  vertical-align: middle;
-  color: var(--color-red);
-  text-shadow: 0 0 5px rgba(204, 17, 34, 0.5), 0 0 8px rgba(255, 255, 255, 0.1);
-}
-#BlogArchive1 h2:before { content: 'archive'; }
-#Label1 h2:before { content: 'label'; }
-#Translate1 h2:before {
-  content: 'translate';
-}
 /* Label grid layout */
 .widget-content.list-label-widget-content ul {
   list-style: none;
-  margin: 0;
-  padding: var(--padding-general);
+  margin: 8px 0 0 0; /* small top margin only */
+  padding: 0;         /* removes internal spacing */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
@@ -653,7 +664,7 @@ span:not(.material-icons):not(.material-symbols-rounded) {
 .widget-content.list-label-widget-content li a {
   display: block;
   padding: 4px 8px;
-     background: linear-gradient(135deg, #2c0000, #100000);
+  background: linear-gradient(135deg, #2c0000, #100000);
   color: var(--color-white);
   font-family: var(--font-primary);
   font-size: 0.75rem;
@@ -887,7 +898,7 @@ span:not(.material-icons):not(.material-symbols-rounded) {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 1.2em auto;
+  margin: 0.1em auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(90, 141, 207, 0.05);
 }
@@ -1453,7 +1464,7 @@ iframe[src*="youtube.com"]:hover {
   <header class='header'>
     <div class='logo-container'>
       <a href='https://englishmoribundinstitute.blogspot.com/' id='home-page-link'>
-        <img alt='MorEnglish Logo' class='header-logo' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidJKHTm5yWvKi6XUcpUhIYSKS8ZKS25BUcCjmGbDWfzZ074qKWENRuCCAI-8rsj7IedYDp5T8e3rvAhrwaPIrUqSP1R7E8L01lHN-kQ5dJw-NtyVPXm8_2U0M4LGnYC9UitUC2cw1E_h7OGXjQ1kngj6a0X7vKs1Kq5l7vKTj7unHbdbnZ9Wr-JLauJAAB/s320/Square%20Aspect%20Ratio%20MorEnglish.png' srcset='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidJKHTm5yWvKi6XUcpUhIYSKS8ZKS25BUcCjmGbDWfzZ074qKWENRuCCAI-8rsj7IedYDp5T8e3rvAhrwaPIrUqSP1R7E8L01lHN-kQ5dJw-NtyVPXm8_2U0M4LGnYC9UitUC2cw1E_h7OGXjQ1kngj6a0X7vKs1Kq5l7vKTj7unHbdbnZ9Wr-JLauJAAB/s320/Square%20Aspect%20Ratio%20MorEnglish.png 2x'>
+        <img alt='MorEnglish Logo' class='header-logo' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSUqcz8cWuRsOTl6pTp3yw95rFiduo7tMrK_KRhM-9DuPb-6IIwB5WRIGlIr3k6w7VZ3nENsGSW9a45QSRJSTWYyDzFZ2ZL3E0XVAcvG2iFgBNwwnLw3AGXIqTa066cGd6bLPtlfI2GDAE2A-CRu0gS7gD_wkSXQxak_oTdbiLnmZ5TjaCS3ILm2-wwsne/s320/MorEnglish%20Profile%201.png' srcset='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSUqcz8cWuRsOTl6pTp3yw95rFiduo7tMrK_KRhM-9DuPb-6IIwB5WRIGlIr3k6w7VZ3nENsGSW9a45QSRJSTWYyDzFZ2ZL3E0XVAcvG2iFgBNwwnLw3AGXIqTa066cGd6bLPtlfI2GDAE2A-CRu0gS7gD_wkSXQxak_oTdbiLnmZ5TjaCS3ILm2-wwsne/s320/MorEnglish%20Profile%201.png 2x'>
         </img>
           </a>
     </div>
@@ -3951,10 +3962,10 @@ window.addEventListener('DOMContentLoaded', function() {
         <!-- Legal Column -->
         <div class='footer-column'>
           <div class='copyright'>
-            &#169; <script type='text/javascript'>document.write(new Date().getFullYear());</script> MorDictionary<br/>
+            &#169; <script type='text/javascript'>document.write(new Date().getFullYear());</script> MorEnglish<br/>
             Licensed under the 
             <a href='https://opensource.org/licenses/MIT' rel='noopener noreferrer' target='_blank'>The Unlicense</a>.<br/>
-            <a href='https://github.com/MorDictionary/blogger-theme-mor-dictionary/tree/main' rel='noopener noreferrer' target='_blank'>
+            <a href='https://github.com/EnglishMoribund/blogger-theme-morenglish/tree/main' rel='noopener noreferrer' target='_blank'>
               GitHub Repository
             </a>
           </div>
@@ -4215,10 +4226,10 @@ document.addEventListener("DOMContentLoaded", function () {
       dateDisplay.className = &quot;post-date&quot;;
       dateDisplay.textContent = postDate;
 
-      // Create author display with MorDictionary link
+      // Create author display with MorEnglish link
       const authorDisplay = document.createElement(&quot;div&quot;);
       authorDisplay.className = &quot;post-author&quot;;
-      authorDisplay.innerHTML = `<a class='author-name' href='https://www.blogger.com/profile/02437971647188799023' rel='noopener noreferrer' target='_blank'>By: MorDictionary</a>`;
+      authorDisplay.innerHTML = `<a class='author-name' href='https://www.blogger.com/profile/07745343642605645986' rel='noopener noreferrer' target='_blank'>By: MorEnglish</a>`;
 
       // Define share buttons with safe URLs
       const platforms = [
